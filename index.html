@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf8">
+    <meta name="author" content="Guilherme Eduardo Maffei">
+    <meta name="description" content="Venha conhecer meu portifólio, saiba um pouco sobre mim e minha habilidades no incrivel mundo da programação.">
+    <meta name="keywords" content="programação, ti, TI, portifólio de programador, front-end, back-endm, portifílio de programador fron-end, portifólio de programador back-end">
+    <meta name="robots" content="index, follow">
+    <meta name="rating" content="general">
+    <title>Guilherme Maffei</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar d-flex opacity">
+        <div class="logo-content d-flex" data-anime="top">
+            <span>Dev.</span>
+        </div>
+        <div class="content-menu">
+            <ul class="d-flex" id="content-menu">
+                <li><a href="#cabecalho" onclick="closeNavbar()">Home</a></li>
+                <li><a href="#servicos" onclick="closeNavbar()">Serviços</a></li>
+                <li><a href="#sobre" onclick="closeNavbar()">Contato</a></li>
+                <li><a href="#portifolio" onclick="closeNavbar()">Portifólio</a></li>
+
+                <div onclick="closeNavbar()">
+                    <span>&times;</span>
+                </div>
+            </ul>
+        </div>
+        <div class="buttom-menu-content d-flex" onclick="openNavbar()">
+            <i class="fa fa-align-justify"></i>
+        </div>
+    </nav>
+    <header class="main-header" id="cabecalho">
+        <video autoplay muted loop class="video">
+            <source src="video-floresta.mp4" type="video/mp4">
+        </video>
+        <div class="flutuar">
+            <div class="container background-cinza">
+                <div class="cabecalho d-flex">
+                    <header>
+                        <h1 class="roboto-slab b-700 mb-2">Eu sou Guilherme maffei</h1>
+                        <h2>Sou desenvolvedor Web</h2>
+                    </header>
+                    <div class="buttom-container mt-5">
+                        <a href="#" class="buttom-portifolio">Portifólio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section-services padding-top-bottom" id="servicos">
+        <div class="container">
+            <header class="my-services">
+                <h2 class="roboto-slab b-700">Meus serviços</h2>
+            </header>
+
+            <div class="services-content d-flex">
+                <div class="service d-flex" data-anime="left">
+                    <div class="icon-service">
+                        <img src="icone-monitor.jpg" alt="Icone de um computador" title="desenvolvimento front-end">
+                    </div>
+                    <div class="about-service">
+                        <h3 class="roboto-slab b-400">Desenvolvimento front-end</h3>
+                        <p>Front-end não apenas o que aparece e o que se sente. Front-end é como funciona.</p>
+                    </div>
+                </div>
+
+                <div class="service d-flex" data-anime="left">
+                    <div class="icon-service">
+                        <img src="icone-monitor.jpg" alt="Icone de um computador" title="desenvolvimento front-end">
+                    </div>
+                    <div class="about-service">
+                        <h3 class="roboto-slab b-400">Desenvolvimento back-end</h3>
+                        <p>Programador backend é o profissional que desenvolve o sistema que vai ser utilizado para gestão dos dados.</p>
+                    </div>
+                </div>
+
+                <div class="service d-flex" data-anime="left">
+                    <div class="icon-service">
+                        <img src="icone-monitor.jpg" alt="Icone de um computador" title="desenvolvimento front-end">
+                    </div>
+                    <div class="about-service">
+                        <h3 class="roboto-slab b-400">Desenvolvimento design gráfico</h3>
+                        <p>Design Gráfico é a área de conhecimento e a prática profissional específicas relativas ao ordenamento estético-formal de elementos textuais e não-textuais que compõem peças gráficas destinadas .</p>
+                    </div>
+                </div>
+
+                <div class="service d-flex" data-anime="left">
+                    <div class="icon-service">
+                        <img src="icone-monitor.jpg" alt="Icone de um computador" title="desenvolvimento front-end">
+                    </div>
+                    <div class="about-service">
+                        <h3 class="roboto-slab b-400">SEO</h3>
+                        <p>SEO significa Search Engine Optimization (otimização para mecanismos de busca). É um conjunto de técnicas de otimização para sites, blogs e páginas na web.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <article class="article-about-me padding-top-bottom background-cinza" id="sobre">
+        <div class="container">
+            <header>
+                <h2 class="roboto-slab">Sobre mim</h2>
+            </header>
+            <div class="about-content d-flex ">
+                <div data-anime="left">
+                    <p>Aos 16 anos, ainda muito jovem descobri que poderia criar o que eu quisesse, com apenas clicks e um computador. </p>
+                    <p>Neste mundo da computação, fui me aventurando e um dos primeiros lugares que descobri foi o mundo do desenvolvimento web. Ah, aquele primeiro hello world, a gente nunca esquece.</p>
+                </div>
+                <div class="about-img-content" data-anime="top">
+                    <img src="laptop.jpeg" class="">
+                    <div class="black-display"></div>
+                </div>
+                <div data-anime="left">
+                    <p>Atualmente busco novos desafios, aprender coisas novas com pessoas que realemente entendem do assunto, e mesmo assim, toda vez que surge uma chance de escutar uma dica de alguém, nem mesmo pisco. </p>
+                    <p>Em meus códigos, tenho obsessão em deixa-los os mais legiveis possiveis para outros programadores, porque como já dizia um grande pensador:</p>
+                    <p><i>"Medir o progresso de um programa por linhas de código é como medir o processo de montagem de um avião pelo peso."</i></p>
+                    <span><b>-Bill Gates</b></span>
+                    
+                    <div class="mt-5">
+                        <a href="https://api.whatsapp.com/send?1=pt_BR&phone=554791385663" class="contact-buttom">
+                            Contate
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </article>
+
+    <section class="section-portifolio padding-top-bottom" id="portifolio">
+        <div class="container">
+            <header>
+                <h2 class="roboto-slab b-700">Portifólio</h2>
+            </header>
+            <div class="portifolio-content d-flex">
+                <div data-anime="top">
+                    <a href="https://guilhermecode.github.io/andre/" target="_blank">
+                        <img src="andre-spader.jpg">
+                        <div class="display-black">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </a>
+                </div>
+                <div data-anime="top">
+                    <a href="pizzaria.html" target="_blank">
+                        <img src="pizzaria.jpg">
+                        <div class="display-black">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </a>
+                </div>
+                <div data-anime="top">
+                    <a href="#" target="_blank">
+                        <img src="foto-quadrada.jpg">
+                        <div class="display-black">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </a>
+                </div>
+                <div data-anime="top">
+                    <a href="#" target="_blank">
+                        <img src="foto-quadrada.jpg">
+                        <div class="display-black">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </a>
+                </div>
+                <div data-anime="top">
+                    <a href="#" target="_blank">
+                        <img src="foto-quadrada.jpg">
+                        <div class="display-black">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </a>
+                </div>
+                <div data-anime="top">
+                    <a href="#" target="_blank">
+                        <img src="foto-quadrada.jpg">
+                        <div class="display-black">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="menu.js"></script>
+    <script src="data-anime.js"></script>
+</body>
+</html>

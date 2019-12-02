@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf8">
+    <meta name="description" content="Venha conhecer meu portfólio, saiba um pouco sobre mim e minha habilidades no incrivel mundo da programação.">
+    <meta name="keywords" content="programação, ti, TI, portfólio de programador, front-end, back-endm, portfílio de programador fron-end, portifólio de programador back-end">
+    <meta name="robots" content="noindex, follow">
+    <title>Guilherme Maffei</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        main {position: relative; height: 100vh;}
+        video {width: 100%;}
+    </style>
+</head>
+<body>
+    <nav class="navbar d-flex">
+        <div class="logo-content d-flex" data-anime="top">
+            <span>Dev.</span>
+        </div>
+        <div class="content-menu">
+            <ul class="d-flex" id="content-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Contato</a></li>
+                <li><a href="#portifolio">Portifólio</a></li>
+
+                <div onclick="closeNavbar()">
+                    <span>&times;</span>
+                </div>
+            </ul>
+        </div>
+        <div class="buttom-menu-content d-flex" onclick="openNavbar()">
+            <i class="fa fa-align-justify"></i>
+        </div>
+    </nav>
+    
+    <main class="padding-top-bottom">
+       <div class="container">
+            <video autoplay muted loop controls>
+                <source src="video-floresta.mp4" type="video/mp4">
+            </video>
+       </div>
+    </main>
+
+    <script src="menu.js"></script>
+    <script src="data-anime.js"></script>
+</body>
+</html>

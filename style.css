@@ -1,0 +1,95 @@
+body {padding: 0; margin: 0; font-family: 'Raleway', sans-serif;}
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; font-weight: 100;}
+
+.container {max-width: 1100px; margin: 0 auto; padding-left: 50px; padding-right: 50px;}
+@media screen and (max-width: 900px) {
+    .container{padding-left: 25px; padding-right: 25px;}
+}
+.b-400 {font-weight: 400;}
+.b-700 {font-weight: 700;}
+.b-900 {font-weight: 900;}
+.mt-1 {margin-top: 5px;}
+.mb-1 {margin-bottom: 5px;}
+.ml-1 {margin-left: 5px;}
+.mr-1 {margin-right: 5px;}
+.mt-2 {margin-top: 10px;}
+.mb-2 {margin-bottom: 10px;}
+.ml-2 {margin-left: 10px;}
+.mr-2 {margin-right: 10px;}
+.mt-5 {margin-top: 35px;}
+.p-1 {padding: 5px;}
+.d-flex {display: flex;}
+
+.roboto-slab {font-family: 'Roboto Slab', serif;}
+
+/*Padding top and bottom in sections */
+.padding-top-bottom {padding: 100px 0;}
+
+/*NAVBAR*/
+nav.navbar {flex-wrap: wrap; position: fixed; top: 0; left: 0; width: 100%; z-index: 1010; background-color: rgb(255, 255, 255); height: 55px; align-items: center; box-shadow: 0 0 40px 10px rgb(245, 245, 245);}
+
+div.logo-content , div.buttom-menu-content {width: 15%; justify-content: center; align-items: center;}
+
+div.logo-content span {font-size: 1.3em; font-weight: 700; margin-left: 30px;}
+
+nav.navbar div.content-menu {width: 70%;}
+nav.navbar div ul {margin: 0; padding: 0; justify-content: center; transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);}
+nav.navbar div ul li {list-style: none; padding: 15px 25px; margin: 0 10px;}
+nav.navbar div ul li a {text-decoration: none; color: black; position: relative;}
+nav.navbar div ul li a::before {
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 0px;
+    height: 3px;
+    background-color: #00bcd4;
+    transition: .5s;
+}
+nav.navbar div ul li:hover a::before {
+    width: 50%;
+}
+
+nav.navbar div ul li a::after {
+    content: '';
+    position: absolute;
+    top: 120%;
+    right: 0;
+    width: 0px;
+    height: 3px;
+    background-color: #f0f;
+    transition: .5s;
+}
+nav.navbar div ul li:hover a::after {
+    width: 50%;
+}
+nav.navbar div ul div span {display: none; font-size: 5em; font-weight: 400; cursor: pointer;}
+
+div.buttom-menu-content {display: none; font-size: 1.5em; cursor: pointer;}
+
+
+@media screen and (max-width: 900px) { 
+    nav.navbar div ul {position: fixed; top: 0; left: 0; width: 0; height: 100%; background-color: #fff ;flex-direction: column; justify-content: center; align-items: center; overflow: hidden;}
+    nav.navbar div ul li {margin: 20px 0; font-size: 2em;}
+    nav.navbar div ul div span {display: block; position: absolute; top: 15px; right: 25px;}
+    nav.navbar div.buttom-menu-content {display: block;}
+
+    
+}
+
+/* Animação */
+
+[data-anime] {opacity: 0; transition: .9s;}
+
+[data-anime="left"] {transform: translate3d(-50px, 0, 0);}
+
+[data-anime="top"] { transform: translate3d(0, -75px, 0)}
+
+[data-anime="right"] {transform: translate3d(50px, 0, 0);}
+
+[data-anime].animate {transform: translate3d(0px, 0, 0); opacity: 1;}
+
+
+
+
+

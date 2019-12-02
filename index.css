@@ -1,0 +1,106 @@
+
+/*CABEÇALHO*/
+.main-header {position: relative; height: 100vh; overflow: hidden;}
+.background-cinza {background: rgb(250, 250, 250) ;}
+.video{width: 100%; display: none;}
+.flutuar {position: absolute; top: 0; left: 0; background-color: rgba(241, 241, 241, .8); width: 100%; height: 100%;}
+.cabecalho {position: relative;width: 100%; height: 100vh; flex-direction: column; justify-content: center; align-items: center; text-align: center; background-color: none;}
+.cabecalho h1 {font-size: 3.5em;}
+
+header.main-header .container {background-color: rgba(241, 241, 241, 0)}
+
+.buttom-container {transition: all 0.5s; width: 200px;}
+.buttom-container:hover {
+    transform: scale(1.05);
+    display: inline-block;
+}
+.buttom-portifolio {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3em;
+    padding: 10px 23px;
+    border: 1px solid #000;
+    border-radius: 5px 5px 5px 5px;
+}
+.buttom-container:hover .buttom-portifolio{
+    box-shadow: 0 0 15px rgb(211, 211, 211);
+}
+
+
+@media screen and (max-width: 900px) {
+    .main-header {background-image: url('developer.jpeg'); background-position: center; background-attachment: fixed; background-size: cover;}
+    .header-content {flex-direction: column;}
+    .video {display: none;}
+    .flutuar {position: static; opacity: 0.75;}
+
+    .cabecalho {align-items: baseline ;text-align: left;}
+    .cabecalho h1 {font-size: 2.9em;}
+}
+
+@media screen and (min-width: 1200px) {
+    .video{display: block;}
+    
+}
+
+/*SESSÃO DE SERVIÇO*/
+
+.my-services { margin-bottom: 100px; text-align: center; font-size: 1.4em ;}
+
+.services-content {flex-direction: row; flex-wrap: wrap;  align-items: center; justify-content: center; min-height: 60vh;}
+
+.service {width: 44%;padding: 3% 1%; margin: 3% 2%; transition: 0.3s;}
+.service:hover {
+    box-shadow: 0 0 40px 10px rgb(245, 245, 245);
+    transform: scale(1.01);
+}
+.icon-service {padding: 0 20px;}
+.icon-service img{width: 50px; border-radius: 50%;}
+
+.about-service p {color: rgb(102, 102, 102)}
+
+@media screen and (max-width: 900px) {
+    .services-content {flex-direction: column; align-items: center;}
+    .service {width: 94%;}
+}
+
+/*ARTIGO SOBRE MIM*/
+
+.article-about-me header {margin-bottom: 100px; position: relative;}
+.article-about-me header h2 {font-weight: 700; font-size: 2em; }
+.article-about-me header h2:before {
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #f0f;
+    position: absolute;
+    top: 120%;
+    left: 0;
+}
+
+
+.about-content {position: ; min-height: 60vh; justify-content: center;}
+.about-content > div {margin: 0 10px; text-align: justify;}
+.about-content div.about-img-content {margin: 20px 15px; overflow: hidden;}
+.about-content div img {width: 100%; transition: 0.6s;}
+.about-content div img:hover {transform: scale(1.08);}
+
+a.contact-buttom {text-decoration: none; padding: 15px 40px; border-radius: 5px; border: 1px solid #000; transition: 0.5s;}
+a.contact-buttom:hover {background: #000; color: rgb(255, 255, 255);}
+
+@media screen and (max-width: 900px) {
+    .about-content {flex-direction: column;}
+    
+}
+
+/*Section portifolio*/
+.section-portifolio header{margin-bottom: 100px; text-align: center; font-size: 1.4em}
+
+.portifolio-content {flex-direction: row;flex-wrap: wrap;}
+.portifolio-content > div {position: relative; width: 25%; margin: 20px 4.166%; overflow: hidden; transition: 1s; border-radius: 5px;}
+.portifolio-content div img {width: 100%;transition: .5s;}
+.portifolio-content div div.display-black {display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgb(0, 0, 0); opacity: .3; transition: .5s; align-items: center; justify-content: center; color: #fff;}
+.portifolio-content div:hover img {transform: scale(1.08);}
+.portifolio-content div:hover div.display-black {display: flex; justify-content: center; cursor: pointer;}
+@media screen and (max-width: 900px) {
+    .portifolio-content > div {position: relative; width: 40%; margin: 20px 5%;}
+}
