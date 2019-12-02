@@ -24,7 +24,3 @@ function closeNavbar() {
     navbar.CloseMenu("content-menu");
 }
 
-//When the user resizes the window size, the page will refrash
-window.onresize = function(){
-    location.reload();
- };
