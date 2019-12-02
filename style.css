@@ -74,7 +74,12 @@ div.buttom-menu-content {display: none; font-size: 1.5em; cursor: pointer;}
     nav.navbar div ul div span {display: block; position: absolute; top: 15px; right: 25px;}
     nav.navbar div.buttom-menu-content {display: block;}
 
-    
+    nav.navbar div ul li a::after {
+        width: 50%;
+    }
+    nav.navbar div ul li a::before {
+        width: 50%;
+    }
 }
 
 /* Animação */
